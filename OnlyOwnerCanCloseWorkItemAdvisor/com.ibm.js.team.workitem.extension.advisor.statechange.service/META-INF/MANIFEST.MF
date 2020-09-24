@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Work Item State Change Advisors
+Bundle-SymbolicName: com.ibm.js.team.workitem.extension.advisor.statechange.service;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: IBM
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime,
+ com.ibm.team.process.common,
+ com.ibm.team.process.service,
+ com.ibm.team.repository.service,
+ com.ibm.team.repository.common,
+ com.ibm.team.workitem.common,
+ com.ibm.team.workitem.service

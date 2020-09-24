@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.ibm.team.process.service.operationAdvisors">
+      <operationAdvisor
+            class="com.ibm.js.team.workitem.extension.advisor.statechange.service.RestrictClosingToOwner"
+            id="com.ibm.js.team.workitem.extension.advisor.statechange.RestrictClosingToOwner"
+            name="Restrict Closing work Item to Owner"
+            operationId="com.ibm.team.workitem.operation.workItemSave">
+         <extensionService
+               componentId="com.ibm.js.team.workitem.extension.advisor.statechange.common.component"
+               implementationClass="com.ibm.js.team.workitem.extension.advisor.statechange.service.RestrictClosingToOwner">
+               <prerequisites>
+		          <requiredService interface="com.ibm.team.workitem.service.IWorkItemServer" />
+               </prerequisites>
+         </extensionService>
+      </operationAdvisor>
+   </extension>
+</plugin>
